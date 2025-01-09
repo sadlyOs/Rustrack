@@ -1,0 +1,59 @@
+:root {
+    --color-yellow: #fec80b;
+    --container-size: 1351px;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/Fira_Sans/FiraSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: url('../fonts/Fira_Sans/FiraSans-SemiBold.ttf');
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    color: black;
+    font-family: 'FiraSans';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'FiraSans-Bold';
+    margin: 0;
+}
+
+._container {
+    max-width: var(--container-size);
+    margin: 0 auto;
+}
+
+.header__container-block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-header {
+    display: flex;
+}
+
+.logo-hedaer__block1 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.logo-hedaer__block1::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    transform: rotate(-90deg);
+    background-color: var(--color-yellow);
+}
+
+.logo-hedaer__block2 {
+    max-width: 200px;
+}
